@@ -5,13 +5,13 @@ document.getElementById("btMuovi").onclick = moveClick
 
 var speed = 10,
   pos = 1
- 
+
 function moveClick() {
-  pos = move(speed, pos)
+  pos = pos + move(speed, pos)
   console.log("moveClick")
   document.getElementById("Navicella").style.marginLeft = pos + "px"
 }
 
 function move(speed, pos) {
-  return  pos + (pos * speed)
+  return   (pos * speed)
 }
